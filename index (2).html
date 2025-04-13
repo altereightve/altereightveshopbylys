@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Altereightve Shop by Lys</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #ffe7f0;
+      color: #333;
+    }
+    header {
+      background-color: #fffaf6;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+    }
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fff6fa;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .hero .product {
+      display: inline-block;
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .hero .product img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .hero .product h4 {
+      margin: 10px 0 5px;
+    }
+    .hero a {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #ff5fc1;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .intro {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    .intro h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .product {
+      background: #fff6fa;
+      border-radius: 15px;
+      padding: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+    .login {
+      background-color: #fff6fa;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .login h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .login input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .login button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff5fc1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fffaf6;
+      font-size: 14px;
+    }
+    .submit {
+      background-color: #fffaf6;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .submit-link {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #ff5fc1;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Altereightve Shop Logo" />
+    <nav>
+      <a href="#intro">About</a>
+      <a href="#products">Shop</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>🌟 Coming Soon Collection 🌟</h1>
+    <div class="product">
+      <img src="product1.png" alt="Vintage Denim Jacket" />
+      <h4>Vintage Denim Jacket</h4>
+      <p><a href="https://instagram.com/sellerprofile" target="_blank">DM to Buy</a></p>
+    </div>
+    <br />
+    <a href="#intro">Learn More</a>
+  </section>
+
+  <section class="intro" id="intro">
+    <h2>Welcome to Altereightve Shop by Lys</h2>
+    <p>
+      A cozy, curated space for all things vintage, preloved, and reimagined. Our platform connects passionate sellers and curious buyers who value uniqueness and story-rich items.
+    </p>
+  </section>
+
+  <section class="products" id="products">
+    <div class="product">
+      <img src="product2.png" alt="Preloved Knitwear" />
+      <h4>Preloved Knitwear</h4>
+      <p><a href="https://instagram.com/seller2" target="_blank">DM to Buy</a></p>
+    </div>
+    <div class="product">
+      <img src="product3.png" alt="Retro Blouse" />
+      <h4>Retro Blouse</h4>
+      <p><a href="https://instagram.com/seller3" target="_blank">DM to Buy</a></p>
+    </div>
+  </section>
+
+  <section class="submit" id="submit">
+    <h2>Want to Sell With Us?</h2>
+    <p>Submit your items to be listed on our site.</p>
+    <a href="seller-form.html" target="_blank" class="submit-link">Fill the Seller Form</a>
+  </section>
+
+  <section class="login" id="login">
+    <h3>Login to Your Account</h3>
+    <form>
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Altereightve Shop by Lys | Malaysia
+  </footer>
+</body>
+</html>
